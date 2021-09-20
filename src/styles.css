@@ -1,0 +1,53 @@
+html,
+body {
+  margin: 0;
+}
+.app {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidebar {
+  height: 100%;
+  background: black;
+  position: absolute;
+  left: -100%;
+  transition: left 0.2s ease-in;
+}
+
+.sidebar-visible {
+  left: 0;
+}
+
+.closeButton {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  transform: rotate(45deg);
+  font-size: 72px;
+  font-family: "Dank mono", monospace;
+  right: 12px;
+}
+
+.openButton {
+  background: none;
+  border: 2px black solid;
+  font-size: 36px;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+.navigation {
+  padding: 72px 90px 40px 0px;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item a {
+  text-decoration: none;
+  color: white;
+  font-family: "Dank mono", monospace;
+}
